@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset='utf-8'>
+		<title>Exibição de vídeo usando tag vídeo padrão</title>
+		<style>
+			body {
+				margin: 0;
+				overflow: hidden;
+			}
+			video {
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<video id="video" autoplay>
+		  <source src="http://distribution.bbb3d.renderfarming.net/video/mp4/bbb_sunflower_1080p_30fps_normal.mp4" type="video/mp4">
+		</video>
+
+		<script>
+			var video = document.getElementById('video');
+			
+			video.addEventListener('click', function(el) {
+				video.pause(); // Parar pra eu não ficar ouvindo o tempo todo a musica D:
+			});
+			
+			// Google Chrome & Ubuntu: Não exibe explicitamente quanto de memória a GPU está usando para processar. Com canvas exibe
+
+		</script>
+	</body>
+</html>

@@ -1,5 +1,7 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 	<head>
+		<meta charset='utf-8'>
 		<title>WebGL teste</title>
 		<style>
 			body {
@@ -15,6 +17,7 @@
 				display: none;
 			}
 		</style>
+		<script src="js/polyfills.js"></script>
 		<script src="js/three.js"></script>
 	</head>
 	<body>
@@ -40,7 +43,7 @@
 					 return false;
 				 }
 				 context.drawImage(video, 0, 0);
-				 setTimeout(imprime, 5);
+				 requestAnimationFrame(imprime);
 			 }
 
 		</script>
